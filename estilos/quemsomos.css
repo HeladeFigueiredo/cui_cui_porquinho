@@ -1,0 +1,106 @@
+@import url('./index.css');
+@import url('./header.css');
+
+.article_quemsomos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-family: var(--letra_artigos);
+    font-size: 70px;
+    color: var(--cor_letra_página);
+    margin-bottom: 20px;
+}
+
+.cartão_quemsomos{
+    display: flex;
+    background-color: var(--cor_menu);
+    margin: 0 90px  80px 90px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .35);
+}
+
+.img_quemsomos{ 
+    width: calc(100% / 4.5);
+    height: 100%;
+    margin: 26px;
+}
+
+.sub-titulo_quemsomos{
+    font-family: var(--letra_artigos);
+    font-size: 30px;
+    margin: 26px 0;
+}
+
+.texto_quemsomos{
+    font-family: var(--letra_artigos);
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 40px 40px 0 ;
+}
+
+@media screen and (max-width: 767.9px) {
+    .article_quemsomos{
+        font-size: 38px;
+        margin: 25px;
+        height: 100%;
+    }
+
+    .cartão_quemsomos{
+        margin: 0 20px 40px 20px;
+        flex-direction: column;
+    }
+
+    .img_quemsomos{
+        width: 84%;
+        margin: 20px auto 0;
+        border-radius: 30px;
+    }
+
+    .sub-titulo_quemsomos{
+        font-size: 23px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .texto_quemsomos{
+        font-size: 18px;
+        text-align: justify;
+        margin: 0 auto;
+        padding: 0 20px 20px 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px){
+    .article_quemsomos{
+        font-size: 40px;
+        margin: 25px;
+        height: 100%;
+    }
+
+    .cartão_quemsomos{
+        margin: 0 30px 40px 30px;
+        flex-direction: column;
+    }
+
+    .img_quemsomos{
+        width: 280px;
+        margin: 22px auto;
+    }
+
+    .sub-titulo_quemsomos{
+        font-size: 23px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .texto_quemsomos{
+        font-size: 18px;
+        text-align: justify;
+        margin: 20px;
+        padding: 0 20px 10px 20px;
+    }
+
+
+}

@@ -1,0 +1,132 @@
+@import url('./index.css');
+@import url('./header.css');
+
+.article_alojamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-family: var(--letra_artigos);
+    font-size: 70px;
+    color: var(--cor_letra_página);
+    margin-bottom: 20px;
+}
+
+.cartao_alojamento{
+    display: flex;
+    background-color: var(--cor_menu);
+    margin: 0 90px  80px 90px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .35);
+}
+
+.sub-titulo_alojamento{
+    font-family: var(--letra_artigos);
+    font-size: 30px;
+    margin: 40px 0 0 40px;
+}
+
+.texto_alojamento{
+    font-family: var(--letra_artigos);
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 40px 60px 40px;
+}
+
+.cartao_alojamento_img{
+    display: flex;
+    background-color: var(--cor_menu);
+    margin: 0 90px 80px 90px;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 10px gray;
+}
+
+.img_alojamento{
+    width: calc(100% / 4);
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 767.9px) {
+    .article_alojamento{
+        font-size: 40px;
+        margin: 25px;
+        height: 100%;
+    }
+
+    .cartao_alojamento{
+        margin: 0 20px 20px 20px;
+    }
+
+    .sub-titulo_alojamento{
+        font-size: 23px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .texto_alojamento{
+        font-size: 18px;
+        text-align: justify;
+        margin: 0 auto;
+        padding: 0 30px 30px 30px;
+        line-height: 1.3;
+    }
+
+    .cartao_alojamento_img{
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_alojamento{
+        width: 85%;
+        margin: 20px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px){
+    .article_alojamento{
+        font-size: 50px;
+        margin: 25px;
+        height: 100%;
+    }
+
+    .cartao_alojamento{
+        margin: 0 20px 40px 20px;
+    }
+
+    .sub-titulo_alojamento{
+        font-size: 26px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .texto_alojamento{
+        font-size: 20px;
+        text-align: justify;
+        margin: 0 auto;
+        padding: 0 30px 30px 30px;
+        line-height: 1.3;
+    }
+
+    .cartao_alojamento_img{
+        margin: 0 20px 40px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_alojamento{
+        width: 50%;
+        margin: 20px 50px 20px 50px;
+        border-radius: 30px;
+    }
+}
+
+
+
+/* 
+font 40px
+margin 25px
+23
+18 */

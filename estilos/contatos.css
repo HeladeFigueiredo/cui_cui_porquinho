@@ -1,0 +1,264 @@
+@import url('./index.css');
+@import url('./header.css');
+
+main{
+    display: grid;
+    height: 94vh;
+    place-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.5fr 1fr;
+    grid-template-areas: 
+    "mapa form"
+    "icones form";
+    gap: 35px;
+}
+
+input,
+textarea{
+    font-size: 20px;
+}
+
+/* MAPA */
+
+.titulos{
+    font-size: 30px;
+    font-family: var(--letra_artigos);
+    text-align: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    background-color: var(--cor_menu);
+
+    display: grid;
+    place-items: center;
+    grid-template-rows: 80px 1.5fr;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .35);
+    height: 100%;
+}
+
+.mapa_configuracao{
+    height: 90%;
+    width: 90%;
+
+    place-self: baseline;
+    margin: 0 auto;
+}
+
+/* FORMULÁRIO */
+
+.form{
+    background-color: var(--cor_menu);
+    grid-area: form;
+
+    display: grid;
+    place-items: center;
+    grid-template-rows: 80px 2fr;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .35);
+}
+
+.form_configuracao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 85%;
+    margin: 0 60px;
+}
+
+.input_texto{
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.input_texto label{
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+.input_texto input{
+    width: 100%;
+}
+
+.input_radio{
+    margin-bottom: 8px;
+}
+
+.input_radio p{
+    font-size: 25px;
+    margin-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+} 
+
+.input_radio_escolhas{
+    margin-left: 40px;
+}
+
+input[type="radio"]{
+    accent-color: black;
+}
+
+.input_radio label{
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.input_area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_area label{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.botao_final{
+    font-size: 18px;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.botao_final:hover{
+    color: var(--cor_menu);
+    border-color: var(--cor_menu);
+    margin: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ICONES */
+
+.icones{
+    background-color: var(--cor_menu);
+    grid-area: icones;
+    display: flex;
+
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .35);
+}
+
+.icones_configuracao{
+    height: 70px;
+    width: 70px;
+}
+
+@media screen and (max-width: 767.9px) {
+    main {
+        height: 100%;
+        margin: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3.5fr;
+        grid-template-areas: 
+        "form"
+        "mapa"
+        "icones";
+    }
+
+    .titulos{
+        font-size: 35px;
+    }
+
+    .form_configuracao{
+        margin: 0;
+    }
+
+    .input_texto label{
+        font-size: 20px;
+    }
+
+    .input_radio p{
+        font-size: 20px;
+    }
+
+    .input_radio_escolhas{
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .input_radio_escolhas label {
+        font-size: 20px;
+        margin: 0;
+        width: 40%;
+    }
+
+    .input_area label{
+        font-size: 20px;
+    }
+
+    .botao_final{
+        font-size: 17px;
+    }
+
+    .mapa{
+        height: 400px;
+    }
+
+    .icones_configuracao{
+        width: 40%;
+        height: 40%;
+        margin: 15px;
+    }
+
+    .icones a{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px){
+    main {
+        height: 100%;
+        margin: 20px;
+    }
+
+    .input_texto label{
+        font-size: 23px;
+    }
+
+    .input_radio p{
+        font-size: 23px;
+    }
+
+    .input_radio_escolhas{
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+    }
+    
+    .input_radio_escolhas label {
+        font-size: 18px;
+    }
+
+    .input_area label{
+        font-size: 23px;
+    }
+
+    .botao_final{
+        font-size: 15px;
+    }
+
+    .mapa{
+        height: 550px;
+    }
+
+    .icones_configuracao{
+        width: 60%;
+        height: 60%;
+    }
+
+    .icones a{
+        text-align: center;
+    }
+}
